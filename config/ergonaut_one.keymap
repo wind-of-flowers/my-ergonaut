@@ -44,6 +44,34 @@
             bindings = <&kp LA(LEFT_SHIFT) &kp SINGLE_QUOTE &kp LA(LEFT_SHIFT)>;
             label = "SINGLEQUOTE";
         };
+
+        leftsqurebracket: leftsqurebracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT) &kp LEFT_BRACKET &kp LA(RIGHT_SHIFT)>;
+            label = "LEFTSQUREBRACKET";
+        };
+
+        rightsquarebracket: rightsquarebracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT) &kp RIGHT_BRACKET &kp LA(LEFT_SHIFT)>;
+            label = "RIGHTSQUAREBRACKET";
+        };
+
+        leftbracketstrange: leftbracketstrange {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT) &kp LS(LEFT_BRACKET) &kp LA(LEFT_SHIFT)>;
+            label = "LEFTBRACKETSTRANGE";
+        };
+
+        rightbracketstrange: rightbracketstrange {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT) &kp LS(RIGHT_BRACKET) &kp LA(LEFT_SHIFT)>;
+            label = "RIGHTBRACKETSTRANGE";
+        };
     };
 
     keymap {
@@ -60,19 +88,19 @@
 
         lower_layer {
             bindings = <
-&kp LGUI   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp F12
-&kp LCTRL  &kp EXCL      &kp AT        &kp HASH       &kp DLLR      &kp PRCNT     &kp CARET     &kp AMPS      &kp STAR      &kp LPAR      &kp RPAR      &mt RCTRL MINUS
-&kp LALT   &doublequote  &kp MINUS     &kp LS(SLASH)  &kp N4        &kp N5        &kp N6        &kp N7        &kp SLASH     &kp EQUAL     &singlequote  &kp RALT
-                                       &trans         &trans        &trans        &kp DEL       &trans        &trans
+&kp LGUI   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4         &kp NUMBER_5       &kp NUMBER_6         &kp NUMBER_7          &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp F12
+&kp LCTRL  &kp EXCL      &kp AT        &kp HASH       &kp DLLR             &kp PRCNT          &kp CARET            &kp AMPS              &kp STAR      &kp LPAR      &kp RPAR      &mt RCTRL MINUS
+&kp LALT   &doublequote  &kp MINUS     &kp LS(SLASH)  &leftbracketstrange  &leftsqurebracket  &rightsquarebracket  &rightbracketstrange  &kp SLASH     &kp EQUAL     &singlequote  &kp RALT
+                                       &trans         &trans               &trans             &kp DEL              &trans                &trans
             >;
         };
 
         raise_layer {
             bindings = <
-&mt LGUI KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp LS(HOME)      &kp RS(END)        &kp HOME  &kp UP_ARROW  &kp PG_UP  &kp SLCK         &kp RIGHT_BRACKET
-&kp LCTRL        &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp HOME          &kp END            &kp LEFT  &kp DOWN      &kp RIGHT  &kp INS          &mt RCTRL K_APP
-&kp LALT         &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LC(LS(LEFT))  &kp LC(LS(RIGHT))  &kp END   &kp DOWN      &kp PG_DN  &kp PAUSE_BREAK  &kp LC(LS(Z))
-                                             &trans     &trans     &trans            &trans             &trans    &trans
+&mt LGUI KP_NUM  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp KP_N8  &kp KP_N9  &kp LS(HOME)      &kp RS(END)        &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &kp PRINTSCREEN  &kp RIGHT_BRACKET
+&kp LCTRL        &kp KP_MULTIPLY  &kp KP_N4          &kp KP_N5  &kp KP_N6  &kp HOME          &kp END            &kp LEFT     &kp DOWN      &kp RIGHT      &kp INS          &mt RCTRL K_APP
+&kp LALT         &kp KP_N0        &kp LS(MINUS)      &kp KP_N2  &kp KP_N3  &kp LC(LS(LEFT))  &kp LC(LS(RIGHT))  &kp END      &kp DOWN      &kp LS(EQUAL)  &kp PAUSE_BREAK  &kp LC(LS(Z))
+                                                     &trans     &trans     &trans            &trans             &trans       &trans
             >;
         };
 
