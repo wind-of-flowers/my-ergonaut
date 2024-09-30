@@ -99,7 +99,7 @@
             bindings = <
 &none  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &none   &none   &kp LS(HOME)      &kp RS(END)        &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &kp PRINTSCREEN  &none
 &none  &none            &none              &none   &none   &kp HOME          &kp END            &kp LEFT     &kp DOWN      &kp RIGHT      &none            &none
-&none  &none            &kp LS(MINUS)      &none   &none   &kp LC(LS(LEFT))  &kp LC(LS(RIGHT))  &kp END      &kp DOWN      &kp LS(EQUAL)  &none            &kp LC(LS(Z))
+&none  &none            &kp LS(MINUS)      &none   &none   &kp LC(LS(LEFT))  &kp LC(LS(RIGHT))  &none        &kp DOWN      &kp LS(EQUAL)  &none            &kp LC(LS(Z))
                                            &trans  &trans  &trans            &trans             &trans       &trans
             >;
         };
