@@ -162,7 +162,7 @@ layers:
   - MUTE
   - VOLUME DOWN
   - VOLUME UP
-  - '&doublequote'
+  - ''
   - ''
   - Reset
   - {t: ▽, type: trans}
