@@ -21,14 +21,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        lang {
-            bindings = <&kp LA(LEFT_SHIFT)>;
-            key-positions = <19 20>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         doublequote: doublequote {
