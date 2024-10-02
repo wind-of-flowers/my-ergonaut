@@ -164,7 +164,7 @@ layers:
   - VOLUME UP
   - ''
   - ''
-  - Reset
+  - Boot
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
