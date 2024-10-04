@@ -1,6 +1,6 @@
 layers:
   default:
-  - {t: ']', h: Gui}
+  - ↹
   - Q
   - W
   - E
@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - '['
-  - {t: '`', h: Ctrl}
+  - {t: Ctrl, h: sticky}
   - A
   - S
   - D
@@ -23,8 +23,8 @@ layers:
   - K
   - L
   - ;
-  - {t: '''', h: Ctrl}
-  - {t: '-', h: Alt}
+  - ''''
+  - {t: LEFT SHIFT, h: sticky}
   - Z
   - X
   - C
@@ -35,39 +35,15 @@ layers:
   - ','
   - .
   - /
-  - {t: \, h: Alt}
-  - {t: ↹, h: raise}
-  - {t: ␣, h: Shift}
-  - {t: ⏎, h: lower}
-  - {t: Esc, h: lower}
-  - {t: ⌫, h: Shift}
-  - {t: ⌦, h: raise}
+  - Ctl+ Z
+  - {t: ESCAPE, h: LEFT ALT}
+  - lower
+  - ␣
+  - ENTER
+  - raise
+  - {t: Alt+ LEFT SHIFT, h: LEFT GUI}
   lower:
-  - {t: F1, h: Gui}
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - {t: +, h: Ctrl}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: '-', h: Ctrl}
-  - {t: '=', h: Alt}
+  - ''
   - '1'
   - '2'
   - '3'
@@ -78,69 +54,93 @@ layers:
   - '8'
   - '9'
   - '0'
-  - Alt
-  - {t: ▽, type: trans}
+  - ']'
+  - ''
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - ''
+  - ''
+  - '&doublequote'
+  - '-'
+  - Sft+ /
+  - '&leftbracketstrange'
+  - '&leftsqurebracket'
+  - '&rightsquarebracket'
+  - '&rightbracketstrange'
+  - /
+  - '='
+  - '&singlequote'
+  - Sft+Ctl+ Z
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+ BACKSPACE
+  - BACKSPACE
+  - DELETE
   raise:
-  - {t: KP NUM, h: Gui}
-  - KP SLASH
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP MINUS
-  - Vol Up
+  - ''
+  - Ctl+ PAGE UP
+  - Ctl+ PAGE DOWN
+  - ''
+  - ''
+  - Sft+ Home
+  - Sft+ End
+  - PAGE UP
+  - UP ARROW
+  - PAGE DOWN
+  - PRINTSCREEN
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - Home
-  - Print Scrn
-  - Page Up
-  - SLCK
-  - CLCK
-  - {t: '=', h: Ctrl}
-  - KP MULTIPLY
-  - KP 4
-  - KP 5
-  - KP 6
-  - KP PLUS
-  - MUTE
-  - ←
-  - ↑
-  - →
-  - Insert
-  - {t: APP, h: Ctrl}
-  - Alt
-  - KP 0
-  - KP 1
-  - KP 2
-  - KP 3
-  - KP DOT
-  - Vol Down
   - End
+  - ←
   - ↓
-  - Page Down
-  - Pause Break
-  - Alt
+  - →
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+ -
+  - ''
+  - ''
+  - Ctl+Sft+ ←
+  - Ctl+Sft+ →
+  - ''
+  - ↓
+  - Sft+ =
+  - ''
+  - Ctl+Sft+ Z
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   adjust:
-  - Boot
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Boot
+  - F11
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F12
   - BT CLR
   - BT 1
   - BT 2
@@ -158,16 +158,16 @@ layers:
   - ''
   - ''
   - ''
+  - Boot
+  - MUTE
+  - VOLUME DOWN
+  - VOLUME UP
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Reset
-  - {type: held}
-  - ''
-  - {type: held}
-  - ''
+  - Boot
   - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - ''
+  - {type: held}
   - {t: ▽, type: trans}
