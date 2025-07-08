@@ -35,28 +35,28 @@
 
         lower_layer {
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6       &kp NUMBER_7   &kp NUMBER_8  &kp N9        &kp NUMBER_0   &kp RIGHT_BRACKET
-&trans  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT     &kp CARET          &kp AMPS       &kp STAR      &kp LPAR      &kp RPAR       &mt RCTRL MINUS
-&trans  &trans        &trans        &trans        &trans        &trans        &trans             &trans         &trans        &kp KP_EQUAL  &kp BACKSLASH  &kp RALT
-                                    &trans        &trans        &trans        &kp LG(BACKSPACE)  &kp BACKSPACE  &kp DELETE
+&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6       &kp NUMBER_7   &kp NUMBER_8  &kp N9     &kp NUMBER_0   &kp RIGHT_BRACKET
+&none  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT     &kp CARET          &kp AMPS       &kp STAR      &kp LPAR   &kp RPAR       &mt RCTRL MINUS
+&none  &none         &kp MINUS     &none         &none         &none         &none              &none          &none         &kp EQUAL  &kp BACKSLASH  &kp RALT
+                                   &none         &none         &none         &kp LG(BACKSPACE)  &kp BACKSPACE  &kp DELETE
             >;
         };
 
         raise_layer {
             bindings = <
-&trans           &trans           &trans     &trans     &trans     &trans       &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CLCK
-&mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS  &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
-&kp LALT         &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT   &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &kp RALT
-                                             &trans     &trans     &trans       &trans        &trans    &trans
+&none  &none  &none           &none  &none  &none     &none         &kp PAGE_UP   &kp UP_ARROW  &kp PAGE_DOWN  &kp PRINTSCREEN  &none
+&none  &none  &none           &none  &none  &kp HOME  &kp END       &kp LEFT      &kp DOWN      &kp RIGHT      &none            &none
+&none  &none  &kp UNDERSCORE  &none  &none  &none     &kp C_VOL_DN  &kp C_VOL_UP  &none         &kp PLUS       &none            &none
+                              &none  &none  &none     &none         &none         &none
             >;
         };
 
         adjust_layer {
             bindings = <
-&bootloader  &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-&sys_reset   &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
-                                         &trans        &none         &trans        &none         &trans        &trans
+&bootloader  &kp F1          &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11
+&bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &kp F12
+&sys_reset   &bt BT_CLR_ALL  &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
+                                           &trans        &none         &trans        &none         &trans        &trans
             >;
         };
     };
